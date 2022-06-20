@@ -11,6 +11,9 @@
 #include "logging-impl.h"
 #include "elasticlient/scroll-parser.h"
 
+#ifndef __GNUC__ 
+#undef DELETE
+#endif
 
 namespace elasticlient {
 
